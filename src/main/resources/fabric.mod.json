@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "eclipsemod",
+	"version": "${version}",
+	"name": "Eclipse Mod",
+	"description": "Esse é meu primeiro mod de minecraft!",
+	"authors": [
+		"Leozituw"
+	],
+	"contact": {
+		"homepage": "Nada",
+		"sources": "Nada"
+	},
+	"license": "MIT",
+	"icon": "assets/eclipsemod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.leozituw.eclipsemod.EclipseMod"
+		],
+		"fabric-datagen": [
+			"net.leozituw.eclipsemod.EclipseModDataGenerator"
+		],
+      "client": [
+        "net.leozituw.eclipsemod.EclipseModClient"
+      ]
+	},
+	"mixins": [
+		"eclipsemod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.1",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
