@@ -11,6 +11,6 @@ public class EclipseMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-    // Dale
+
 	}
 }
